@@ -1,0 +1,160 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: rgb(245, 245, 245);
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 10px 0;
+    max-height: 600px;
+}
+
+.col-2 h3 {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 80;
+}
+
+.xenon {
+    text-align: center;
+    color: #0082e6;
+    font-size: 25px;
+}
+
+.account-page {
+    padding: 70px 0;
+}
+
+.form-container {
+    align-items: center;
+}
+
+.form-container form {
+    position: relative;
+    margin: auto;
+    padding: auto;
+    padding-top: 0px;
+    margin-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0082e6;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+    transition-duration: 0.4s;
+    font-size: x-large;
+}
+
+.form-container .btn:focus {
+    outline: none;
+}
+
+.form-container .btn:hover {
+    background-color: #b9c4cf;
+    color: var(--primary-color);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 130px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 35px;
+    align-items: center;
+}
+
+
+/* .form-container .form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+} */
+
+.form-container input {
+    border: 1px solid black;
+    outline: none;
+    font-size: 16px;
+    width: 80%;
+    margin: 11px 0px;
+    padding: 7px;
+}
+
+.form-container .form label {
+    font-size: 20px;
+}
+
+.account-exist {
+    color: var(--black-color);
+    border-top: 2px solid var(--black-color);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media only screen and (max-width:600px) {
+    .row {
+        text-align: center;
+    }
+    .col-2 {
+        flex-basis: 100%;
+    }
+}
+
+.submitMsg {
+    color: green;
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-container .forget-password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+
+/* .form-container .forget-password a {
+  color: var(--primary-color);
+}
+.form-container .forget-password .check-box {
+  font-size: 15px;
+  color: var(--black-color);
+} */
+
+.form-container a:hover {
+    color: #b9c4cf;
+}
